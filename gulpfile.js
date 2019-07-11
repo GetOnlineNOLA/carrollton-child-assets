@@ -3,14 +3,25 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 
+var paths = {
+    styles: {
+        src: "./sass/**/*.scss",
+        comp: "./sass/carrollton-brand-base.scss",
+        dest: "./wp-content/themes/carrollton-child/css/"
+    }
+};
+
 
 gulp.task('workflow', function () {
-  return gulp.src('./sass/carrollton-brand-base.scss')
-    .pipe(sass().on('error', sass.logError))
-
-  .pipe(gulp.dest('./wp-content/themes/carrollton-child/css/'))
+    return gulp
+        .src(paths.styles.comp)
+        .pipe(sass())
+        .on("error", sass.logError)
+        .pipe(gulp.dest(paths.styles.dest));
 });
 
 gulp.task('default', function () {
-	gulp.watch('./sass/**/*.scss', gulp.series('workflow'));
+    gulp.series('workflow');
+ 
+    gulp.watch(paths.styles.src, gulp.series('workflow'));
 });
