@@ -1,0 +1,180 @@
+&.gon_header-standard {
+	padding: $header-pad 0;
+	background-color: $header-background;
+	border-bottom: $header-border-bottom;
+
+	button.navbar-toggle {margin: -20px 0 0 0;}
+
+	.nav>li.social-link>a,
+	.nav>li.social-link>a:hover,
+	.nav>li.social-link>a:focus,
+	.nav>li.social-link>a:active {
+		border: none;
+	}
+
+	a.button {
+		@include min992 {
+			position: absolute;
+			top: 0;
+			right: 0;			
+		}
+	}
+
+
+
+}
+
+&.gon_header-banded {
+
+	.top-band {
+
+		.container {position: relative;}
+
+		padding: $top-band-pad 0;
+		background-color: $top-band-background;
+
+		#logo img {
+			display: inline-block;
+		}
+
+		.header-links {
+			padding-top: 10px;
+			@include min992 {
+			    position: absolute;
+			    top: 0;
+			    right: 15px;				
+			}
+
+			ul.social-links {
+				display: inline-block;
+				li.social-link {
+				    display: inline-block;
+				    padding: 0 8px;
+				}
+			}
+
+		}
+
+	}
+
+	.bottom-band {
+		padding: $bottom-band-pad 0;
+		background-color: $bottom-band-background;
+		.nav>li{
+			float: none;
+			@include min992 {
+				display: inline-block;
+			}
+		}
+		.dropdown-menu {
+			margin: 0;
+		}
+	}
+
+}
+
+
+&.gon_header-transparent-top,
+&.gon_header-transparent-bottom {
+	padding: $header-pad 0;
+	background-color: rgba($header-background-color,$header-background-opacity);
+	position: absolute;
+    z-index: 1000;
+    width: 100%;
+
+	button.navbar-toggle {margin: -20px 0 0 0;}
+
+	.nav>li.social-link>a,
+	.nav>li.social-link>a:hover,
+	.nav>li.social-link>a:focus,
+	.nav>li.social-link>a:active {
+		border: none;
+	}
+
+	a.button {
+		@include min992 {
+			position: absolute;
+			top: 0;
+			right: 0;			
+		}
+	}
+
+	#logo img {
+		max-width:  200px;
+		margin:  0 auto;
+		@include min769 {
+			max-width: 400px;
+		}
+		@include min992 {
+			max-width: 100%;
+		}
+	}
+
+
+}
+
+&.gon_header-below-slider {
+
+	#logo {
+	    position: absolute;
+	    left: 0;
+	    transform: translateX(-100%);
+	    transition: .3s ease all;
+	    img {
+	    	max-height: 75px;
+	    }
+	    
+	}
+
+	#menu-main-menu {
+	    background-color: $header-background;
+	    z-index: 1000;
+	    position: relative;
+	    padding: $header-pad 15px;
+	    text-align: center;
+
+	    @include min992 {
+	    	display: inline-block;
+		    position: absolute;
+		    right: 50%;
+		    transform: translateX(50%);
+		    transition: .5s ease all;
+		    white-space: nowrap;
+		    margin: 0;
+		    padding: 0;
+		    border: 0;
+		    background: transparent;
+	    }
+	}
+
+	&.fixmenu {
+	    position: fixed;
+	    width: 100%;
+	    left: 0;
+	    right: 0;
+	    top: 0;
+	    z-index: 1000;
+	    #logo {
+    	    left: 15px;
+		    transform: translateX(0);
+	    }
+	    #menu-main-menu {
+	    	@include min992 {
+			    right: 60px;
+			    transform: translateX(0);
+			}
+		}
+
+		&.static {
+			position: absolute;
+		}
+
+
+	}
+
+}
+
+
+&.gon_header-transparent-top {}
+
+&.gon_header-transparent-bottom {}
