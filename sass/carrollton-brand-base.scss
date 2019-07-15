@@ -246,26 +246,6 @@ input[type="submit"]{
 
 	}
 
-	#home-columns {
-
-		@import 'home-includes/columns.scss';
-
-		.home-column {
-			margin-bottom: 20px;
-			@include min481 {
-				width: 50%;
-				margin: 20px auto;
-			}
-			@include min769 {
-				width: 100%;
-			}
-			h3 {
-				color: $hc-header-color;
-				background: $hc-header-background;
-				text-align: center;
-			}
-		}
-	}
 	#additional-home-content {
 		background-color: $hac-background-color;
 		border-top: $hac-border-top;
@@ -278,6 +258,31 @@ input[type="submit"]{
 		p, span {
 			font-size: $hac-font-size;
 			color: $hac-text-color;
+		}
+	}
+}
+
+#home-columns {
+
+	@import 'home-includes/columns.scss';
+
+	> .container {
+		max-width: 100%;
+	}
+
+	.home-column {
+		margin-bottom: 20px;
+		@include min481 {
+			width: 50%;
+			margin: 20px auto;
+		}
+		@include min769 {
+			width: 100%;
+		}
+		h3 {
+			color: $hc-header-color;
+			background: $hc-header-background;
+			text-align: center;
 		}
 	}
 }
