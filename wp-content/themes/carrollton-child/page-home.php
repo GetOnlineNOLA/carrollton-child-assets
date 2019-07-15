@@ -39,6 +39,8 @@ get_header();
 </header>
 <?php } ?>
 
+<?php wp_reset_postdata(); ?>
+
 <section id="home-copy">
 	<div class='container'>
 		<div class='row'>

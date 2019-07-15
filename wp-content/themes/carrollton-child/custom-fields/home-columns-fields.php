@@ -606,6 +606,13 @@ acf_add_local_field_group(array(
 				'value' => 'page-home.php',
 			),
 		),
+		array(
+			array(
+				'param' => 'block',
+				'operator' => '==',
+				'value' => 'acf/gon-columns',
+			),
+		),
 	),
 	'menu_order' => 0,
 	'position' => 'normal',

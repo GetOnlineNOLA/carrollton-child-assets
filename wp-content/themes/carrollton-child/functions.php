@@ -23,6 +23,8 @@ add_action( 'wp_enqueue_scripts', 'gon_enqueue_child_scripts' );
 
 
 //initiate custom fields
+require_once( get_stylesheet_directory() . '/blocks-init.php' );
+
 require_once( get_stylesheet_directory() . '/custom-fields/slideshow-fields.php' );
 require_once( get_stylesheet_directory() . '/custom-fields/additional-home-page-fields.php' );
 require_once( get_stylesheet_directory() . '/custom-fields/home-columns-fields.php' );
