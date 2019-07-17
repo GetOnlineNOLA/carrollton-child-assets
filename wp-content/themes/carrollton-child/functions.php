@@ -1,12 +1,14 @@
 <?php
 function gon_enqueue_child_styles() { 
 	//register styles
+	wp_register_style( 'theme-base', get_stylesheet_directory_uri() . '/css/theme-base.css' );
 	wp_register_style( 'brand-base', get_stylesheet_directory_uri() . '/css/carrollton-brand-base.css' );
 	wp_register_style( 'carrollton-child', get_stylesheet_directory_uri() . '/style.css' );
 	
 	//enqueue styles
-	wp_enqueue_style( 'brand-base', get_stylesheet_directory_uri() . '/css/carrollton-brand-base.css' );
-	wp_enqueue_style( 'carrollton-child', get_stylesheet_directory_uri() . '/style.css', 'theme-base' );
+	wp_enqueue_style( 'theme-base', get_stylesheet_directory_uri() . '/css/theme-base.css' );
+	wp_enqueue_style( 'brand-base', get_stylesheet_directory_uri() . '/css/carrollton-brand-base.css', 'theme-base' );
+	wp_enqueue_style( 'carrollton-child', get_stylesheet_directory_uri() . '/style.css', 'brand-base' );
 }
 
 //theme styles triggered at 11 to ensure overwriting all other styles
