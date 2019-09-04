@@ -3622,7 +3622,6 @@ INSERT INTO `wp1d_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VA
 (46, 1, 'enable_custom_fields', '1'),
 (25, 1, '_yoast_wpseo_profile_updated', '1531324695'),
 (29, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
-(26, 1, 'meta-box-order_page', 'a:4:{s:6:"normal";s:103:"acf-group_57854f05fdsdfd566e,acf-group_5cc364c48840c,acf-group_5d1cea732a215,acf-group_5sdaa0b1ff3ecbce";s:15:"acf_after_title";s:0:"";s:4:"side";s:0:"";s:8:"advanced";s:0:"";}'),
 (27, 1, 'screen_layout_page', '2'),
 (30, 1, 'metaboxhidden_nav-menus', 'a:4:{i:0;s:24:"add-post-type-rl_gallery";i:1;s:12:"add-post_tag";i:2;s:15:"add-rl_category";i:3;s:10:"add-rl_tag";}'),
 (56, 1, 'metaboxhidden_gon-theme-settings_page_adv-settings', 'a:0:{}'),
@@ -3638,7 +3637,6 @@ INSERT INTO `wp1d_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VA
 (42, 1, 'wp1d_wpseo-upsell-notice', 'seen'),
 (43, 1, 'wp1d_wpseo-dismiss-gsc', 'seen'),
 (53, 1, 'closedpostboxes_post', 'a:1:{i:0;s:10:"wpseo_meta";}'),
-(49, 1, 'meta-box-order_gon-theme-settings_page_adv-settings', 'a:2:{s:4:"side";s:9:"submitdiv";s:6:"normal";s:71:"acf-group_5c7efec50a671,acf-group_5cfaba122fdb4,acf-group_5b631c8cc0ace";}'),
 (50, 1, 'screen_layout_gon-theme-settings_page_adv-settings', '2'),
 (55, 1, 'closedpostboxes_gon-theme-settings_page_adv-settings', 'a:1:{i:0;s:23:"acf-group_5c7efec50a671";}');
 
